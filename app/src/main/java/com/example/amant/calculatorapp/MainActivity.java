@@ -1,10 +1,16 @@
 package com.example.amant.calculatorapp;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
+import android.text.Spanned;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
@@ -170,6 +176,38 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+    //For creating custom AppBar: https://developer.android.com/guide/topics/ui/menus.html
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.info, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_help:
+                // For Custom Dialog: https://www.mkyong.com/android/android-custom-dialog-example/
+                final Dialog dialog = new Dialog(MainActivity.this);
+                dialog.setContentView(R.layout.info_dialog);
+                TextView infoText = dialog.findViewById(R.id.info);
+                Spanned text = Html.fromHtml(getString(R.string.dialog_text));
+                infoText.setText(text);
+
+                Button dialogButtonBack = dialog.findViewById(R.id.dialogButtonBack);
+                dialogButtonBack.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.show();
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 
     private void Operation(BigDecimal value, String operation) {
