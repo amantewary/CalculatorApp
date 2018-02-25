@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CAL-C</string>
+    <string name="sign_sym">+ / -</string>
+    <string name="div_sym">/</string>
+    <string name="sqrt_sym">√</string>
+    <string name="pls_sym">+</string>
+    <string name="sub_sym">-</string>
+    <string name="mul_sym">*</string>
+    <string name="result_sym">=</string>
+    <string name="clr_sym">C</string>
+    <string name="aclr_sym">AC</string>
+    <string name="dec_sym">.</string>
+    <string name="zero_sym">0</string>
+    <string name="one_sym">1</string>
+    <string name="two_sym">2</string>
+    <string name="three_sym">3</string>
+    <string name="four_sym">4</string>
+    <string name="five_sym">5</string>
+    <string name="six_sym">6</string>
+    <string name="seven_sym">7</string>
+    <string name="eight_sym">8</string>
+    <string name="nine_sym">9</string>
+    <string name="error">Error</string>
+    <string name="dialog_button">Back</string>
+    <string name="dialog_text">
+        <![CDATA[
+        <h2>INFO</h2>
+        <p>1.)The display can show at most <b>10 characters</b>(digits and symbols).</p>
+        <p>2.) You can perform basic mathematical operations like:-
+        <br/><br/><b>&nbsp;&nbsp;[ + ]&nbsp;Addition</b>
+        <br/><b>&nbsp;&nbsp;[ - ]&nbsp;Subtraction</b>
+        <br/><b>&nbsp;&nbsp;[ * ]&nbsp;Multiplication</b>
+        <br/><b>&nbsp;&nbsp;[ / ]&nbsp;Division</b></p>
+        <p>3.)The <b>Square Root[ √ ]</b> button will give you square root value of the current operand.</p>
+        <p>4.)The <b>Clear[ C ]</b> button is used to remove the current operand on the display.</p>
+        <p>5.)The <b>All Clear[ AC ]</b> button is used to reset the calculator.</p>
+        <br/><br/>Designed and Developed by <br/>Aman Tewary.
+        ]]>
+    </string>
+
+</resources>
