@@ -21,6 +21,7 @@
     <string name="eight_sym">8</string>
     <string name="nine_sym">9</string>
     <string name="error">Error</string>
+    <string name="divide_by_zero">WARNING! Dividing by zero is not allowed.</string>
     <string name="dialog_button">Back</string>
     <string name="dialog_text">
         <![CDATA[

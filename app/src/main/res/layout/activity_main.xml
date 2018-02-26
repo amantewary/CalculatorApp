@@ -38,6 +38,7 @@
         android:layout_width="0dp"
         android:layout_height="61dp"
         android:background="@android:color/transparent"
+        android:ems="10"
         android:enabled="false"
         android:focusable="false"
         android:gravity="bottom|end|clip_horizontal"
@@ -49,7 +50,6 @@
         android:textColor="@color/colorFunctionButton"
         android:textColorHint="@color/colorFunctionButton"
         android:textSize="36sp"
-        android:ems="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -84,7 +84,6 @@
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:minHeight="70dp"
                 android:text="@string/one_sym"
-
                 android:textColor="@color/colorFunctionButton"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toStartOf="@+id/btn_num_2"
