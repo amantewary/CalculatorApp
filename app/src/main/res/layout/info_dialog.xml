@@ -1,32 +1,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:textColor="@color/colorFunctionButton"
         android:layout_marginBottom="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="4dp"
         android:layout_marginTop="16dp"
         android:scrollIndicators="left|end"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:textColor="@color/colorFunctionButton"
+        android:textSize="15sp" />
+
     <Button
         android:id="@+id/dialogButtonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:text="@string/dialog_button"
-        android:textColor="@color/colorFunctionButton"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp" />
+        android:text="@string/dialog_button"
+        android:textColor="@color/colorFunctionButton" />
 </LinearLayout>
