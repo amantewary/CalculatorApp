@@ -1,7 +1,6 @@
 # CalculatorApp (Cal-C)
 ##### Aman Tewary
 
-##### B00782684
 
 ## References
 1.) Referred for callback of clear button: https://www.youtube.com/watch?v=782_MBAZRuw
